@@ -1,0 +1,251 @@
+/* [ GLOBAL ] */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+}
+
+label {
+    user-select: none;
+    cursor: pointer;
+}
+
+.line {
+    background-color: #1342ff;
+    margin-top: 10px;
+    height: 2px;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+}
+
+/* [ HEADER ] */
+.header {
+    background-color: rgb(244, 244, 244);
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .website-info {
+    display: flex;
+}
+
+.header .website-name {
+    margin-left: 5%;
+}
+
+.header .website-logo {
+    width: 4%;
+    height: 2%;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 320px) {
+
+    body { 
+       font-size: 10px; 
+    }
+ 
+}
+
+.header .navbar {
+    display: flex;
+    width: max-content;
+    align-items: center;
+}
+
+.header .navbar .my-products {
+    background-color: #1342ff;
+    color: rgb(240, 240, 240);
+    display: flex;
+    width: 26%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1s;
+    padding: 8px 5px;
+}
+
+.header .navbar .my-products:hover {
+    background-color: #2f59ff;
+}
+
+.header .navbar .my-products p {
+    margin-bottom: 2%;
+    font-weight: 600;
+}
+
+.header .navbar .text {
+    font-weight: 700;
+    margin: 0px 15px;
+}
+
+.header .navbar > h4 {
+    background-color: #dbdbdb;
+    display: flex;
+    width: 40%;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 1%;
+}
+
+.header .navbar > h4:hover {
+    background-color: #e1e1e1;
+}
+
+.header .navbar .checkout-btn {
+    display: flex;
+    background-color: #dbdbdb;
+    width: 12vw;
+    height: 100%;
+    margin-right: 2vw;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 1%;
+}
+
+.header .navbar .checkout-btn:hover {
+    background-color: #e1e1e1;
+}
+
+.header .navbar .checkout {
+    margin-right: 15%;
+}
+
+.header .navbar .cart-img {
+    width: 10%;
+    height: 40%;
+    margin-left: -8px;
+}
+
+/* [ MAIN ] */
+.main {
+    display: flex;  
+    width: 100%;
+    height: 100%; /* Set height to 100% */
+}
+
+.main .sidebar {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    width:  16%;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.main .content {
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+
+.main .sidebar ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar .category-li {
+    margin-top: 7%;
+}
+
+.input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+.custom-checkbox::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2%;
+    height: 2%;
+    background-color: #333;
+    border-radius: 2px;
+    opacity: 0;
+    transition: all .1s;
+}
+
+.input[type="checkbox"]:checked + .custom-checkbox::after {
+    opacity: 1;
+}
+
+.main .sidebar .filter-text {
+    margin-top: 6%;
+    font-weight: 600;
+}
+
+/*[ CONTENT ]*/
+
+.content .products {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.content .products .product {
+    display: flex;
+    background-color: #cfcfcf;
+    width: 90%;
+    height: 96%;
+    margin-top: 8%;
+    margin-left: 6%;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.content .products .product .product-name {
+    margin-top: 5%;
+}
+
+.content .products .product .product-brand {
+    margin-top: 5%;
+}
+
+.content .products .product .add-checkout-btn {
+    background-color: #1342ff;
+    border-radius: 5px;
+    color: #e1e1e1;
+    margin-top: 5%;
+    font-weight: 600;
+    padding: 3% 5%;
+    cursor: pointer;
+}
+
+.content .products .product .add-checkout-btn:hover {
+    background-color:#2f59ff;
+}
+
+.content .title {
+    margin-top: 2%;
+}
+

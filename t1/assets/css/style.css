@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+    font-size: 22px;
+    
+}
+
+.main {
+    text-align: center;
+    margin: auto;
+}
+
+.header {
+    color: blue;
+    text-align: center;
+}
+
+.content {
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.fulldate-likes {
+    height: 45px;
+    width: max-content;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: antiquewhite;
+}
+
+.fulldate-likes .date {
+    display: inline-block;
+    background-color: #1894a0;
+    padding: 10px;
+}
+
+.fulldate-likes .time {
+    display: inline-block;
+    background-color: #475773;
+    padding: 10px;
+    margin-left: -8px;
+}
+
+.fulldate-likes .views {
+    background-color: rgba(0, 0, 0, 0.079);
+    display: flex;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: max-content;
+    height: 42px;
+    border-style: solid;
+    border-color: #00000025;
+    border-width: 1px;
+    margin-left: 15px;
+}
+
+.views p {
+    color: #646464b6;
+    font-weight: 600;
+    margin: auto;
+}
+
+.fulldate-likes .views .eye-icon {
+    height: 30px;
+    width: 30px;
+    margin-top: 7.5px !important;
+    margin-right: 15px;
+}
+
+.like-button .like-img,
+.dislike-button .dislike-img {
+    width: 25px;
+    height: 25px;
+}
+
+.dislike-button .dislike-img {
+    rotate: 180deg;
+}
+
+.fulldate-likes .likes {
+    display: flex;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.fulldate-likes .like-button {
+    background-color: rgba(0, 0, 0, 0.079);
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    height: 42px;
+
+    padding-left: 8px;
+    padding-right: 8px;
+
+    border-style: solid;
+    border-color: #00000025;
+    border-width: 1px;
+    margin-left: 15px;
+}
+
+.fulldate-likes .dislike-button {
+    background-color: rgba(0, 0, 0, 0.079);
+
+    width: max-content;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    
+    padding-left: 8px;
+    padding-right: 8px;
+
+    border-style: solid;
+    border-color: #00000025;
+    border-width: 1px;
+}
+
+.like-button p {
+    margin-left: 15px;
+}
+
+.dislike-button p {
+    margin-left: 15px;
+}
