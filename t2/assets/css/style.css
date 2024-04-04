@@ -55,6 +55,7 @@ label {
 .header .navbar {
     display: flex;
     width: max-content;
+    height: 35%;
     align-items: center;
 }
 
@@ -124,8 +125,8 @@ label {
 }
 
 .header .navbar .cart-img {
-    width: 10%;
-    height: 40%;
+    width: 15px;
+    height: 15px;
     margin-left: -8px;
 }
 
