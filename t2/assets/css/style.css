@@ -44,12 +44,10 @@ label {
     margin-left: 10px;
 }
 
-@media only screen and (max-width: 320px) {
-
-    body { 
-       font-size: 10px; 
+@media screen and (max-width: 601px) {
+    * {
+        font-size: small;
     }
- 
 }
 
 .header .navbar {
@@ -209,6 +207,26 @@ label {
 .content .products {
     display: grid;
     grid-template-columns: auto auto auto auto;
+}
+
+@media screen and (min-width: 100px) {
+    .content .products {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .content .products {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .content .products {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
 }
 
 .content .products .product {
