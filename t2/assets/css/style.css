@@ -11,6 +11,12 @@ label {
     cursor: pointer;
 }
 
+@media screen and (max-width: 601px) {
+    * {
+        font-size: .9rem;
+    }
+}
+
 .line {
     background-color: #1342ff;
     margin-top: 10px;
@@ -22,6 +28,9 @@ label {
 
 /* [ HEADER ] */
 .header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
     background-color: rgb(244, 244, 244);
     display: flex;
     width: 100%;
@@ -44,17 +53,12 @@ label {
     margin-left: 10px;
 }
 
-@media screen and (max-width: 601px) {
-    * {
-        font-size: smaller;
-    }
-}
-
 .header .navbar {
     display: flex;
     width: max-content;
     height: 35%;
     align-items: center;
+    text-overflow: ellipsis;
 }
 
 .header .navbar .my-products {
@@ -202,23 +206,30 @@ label {
 }
 
 /*[ CONTENT ]*/
-
 .content .products {
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
 
-@media screen and (min-width: 100px) {
+@media screen and (min-width: 300px) {
     .content .products {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: auto auto;
+    }
+
+    .header .navbar {
+        font-size: 10px;
     }
 }
 
 @media screen and (min-width: 700px) {
     .content .products {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
+    }
+
+    .header .navbar {
+        font-size: 10px;
     }
 }
 
@@ -227,6 +238,11 @@ label {
         display: grid;
         grid-template-columns: auto auto auto auto;
     }
+    
+    .header .navbar {
+        font-size: .9rem;
+    }
+    
 }
 
 .content .products .product {
@@ -255,6 +271,7 @@ label {
     border-radius: 5px;
     color: #e1e1e1;
     margin-top: 5%;
+    margin-left: 35%;
     font-weight: 600;
     padding: 3% 5%;
     cursor: pointer;
